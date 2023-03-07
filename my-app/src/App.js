@@ -1,22 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+
+
+
+const App = () => {
+ const search = (q) => {
+  console.log({q})
+ }
   return (
-    <div className="App">
+    <div classname="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <h1>CR movie</h1>
+      <div className="Movie-container">
+        <input placeholder="cari film favoritmu disini..." className="Movie-search" 
+        onChange={({target}) => search(target.value)}/>
+        <img className="Movie-title"/>
+        <div className="Movie-date"></div>
+        <div className="Movie-rate"></div>
+      </div>
       </header>
     </div>
   );
