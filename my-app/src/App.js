@@ -17,8 +17,8 @@ const App = () => {
   return(
       <div className="Movie-wrapper" key={i}>
         <div className="Movie-title">{movie.title}</div>
-        <img className="Movie-image" src={movie.poster_path}/>
-        <div className="Movie-date">{movie.release_date}</div>
+        <img className="Movie-image" src={`${process.env.REACT_APP_BASEIMGURL}/${movie.poster_path}`}/>
+        <div className="Movie-date">release : {movie.release_date}</div>
         <div className="Movie-rate">{movie.vote_averange}</div>
       </div>
   )
@@ -36,6 +36,7 @@ const App = () => {
         <input placeholder="cari film favoritmu disini..." className="Movie-search" 
         onChange={({target}) => search(target.value)}/>
       <div className="Movie-container">
+        <PopularMovieList />
       </div>
       </header>
     </div>
