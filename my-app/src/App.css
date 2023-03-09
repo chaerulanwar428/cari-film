@@ -63,5 +63,55 @@
 }
 
 .Movie-image{
-  height: 450px;
+  height: 400px;
+}
+
+@media screen and (max-device-width: 700px){
+
+  .Movie-container{
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .Movie-wrapper{
+    width: 150px;
+    height: 230px;
+  }
+  
+  .Movie-search{
+    height:20px;
+    font-size: 10px;
+    margin-bottom: 10px;
+    padding:16px;
+    font-weight: bold;
+    width: 200px;
+  }
+  
+  .Movie-title{
+    font-size: 10px;
+    font-weight: bold;
+  }
+  
+  .Movie-date{
+    font-size: 10px;
+    font-style:italic;
+  }
+  
+  .Movie-rate{
+    font-size: 10px;
+    color:red;
+    font-weight:bold;
+    text-decoration: underline;
+  }
+  
+  .Movie-image{
+    height: 120px;
+    margin-top: -30px;
+    margin-bottom: -30px;
+  }
+
 }
