@@ -80,6 +80,7 @@
   .Movie-wrapper{
     width: 150px;
     height: 230px;
+    gap: 10px;
   }
   
   .Movie-search{
