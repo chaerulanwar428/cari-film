@@ -4,7 +4,7 @@
 
 
 .App-header {
-  background-color: #282c34;
+  background-color:#182747;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -31,6 +31,7 @@
   width: 350px;
   background-color: antiquewhite;
   color:black;
+  border-radius: 10px;
 
 }
 
@@ -41,6 +42,7 @@
   padding:16px;
   font-weight: bold;
   width: 475px;
+  border-radius: 10px;
 }
 
 .Movie-title{
@@ -81,6 +83,7 @@
     width: 140px;
     height: 220px;
     margin:10px;
+    border-radius: 5px;
   }
   
   .Movie-search{
